@@ -1,0 +1,16 @@
+{
+  "name": "ProtractorTutorial",
+  "dependencies": {
+    "protractor": "^5.4.0",
+    "jasmine-data-provider": "^2.2.0",
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  },
+  "scripts": {
+    "webdriverUpdate": "./node_modules/.bin/webdriver-manager update",
+    "webdriverStart": "./node_modules/.bin/webdriver-manager start",
+    "protractor": "./node_modules/.bin/protractor conf.js",
+    "smokeSuite": "./node_modules/.bin/protractor conf.js --suite Smoke",
+    "regressionSuite": "./node_modules/.bin/protractor conf.js --suite Regression",
+    "connect": "npm run webdriverUpdate && npm run webdriverStart"
+  }
+}
